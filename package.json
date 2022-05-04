@@ -1,0 +1,39 @@
+{
+  "name": "xoom-retail-consumer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "tsc": "tsc",
+    "prepare": "ts-patch install -s",
+    "start": "node dist/server.js",
+    "build": "tsc",
+    "prod": "npm run build && NODE_ENV=production npm run start",
+    "dev": "nodemon",
+    "prettier": "prettier --write '**/*.ts'"
+  },
+  "engines": {
+    "node": "16.13.0",
+    "npm": "8.1.0"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "ts-patch": "^1.4.4",
+    "ts-reflection": "^0.3.0",
+    "tslib": "^2.2.0",
+    "ttypescript": "^1.5.12",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "12.19.4",
+    "nodemon": "^2.0.12",
+    "ts-node": "8.3.0",
+    "tslint": "6.1.3",
+    "typescript": "4.0.5"
+  }
+}
